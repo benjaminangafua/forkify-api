@@ -9,7 +9,6 @@ fetch("https://forkify-api.herokuapp.com/api/search?q=pizza")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
-    banner.innerHTML = `<h1>^</h1> `;
     banner.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.589), rgba(0, 0, 255, 0.274)), url(${data.recipes[13].image_url})`;
 
     for (let i = 0; i <= 2; i++) {
